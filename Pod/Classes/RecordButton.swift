@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Samuel Beek. All rights reserved.
 //
 
-@objc public enum RecordButtonState : Int {
+public enum RecordButtonState : Int {
     case recording, idle, hidden;
 }
 
-@objc open class RecordButton : UIButton {
+open class RecordButton : UIButton {
     
     open var buttonColor: UIColor! = .blue{
         didSet {
@@ -64,7 +64,9 @@
         
     }
     
-    required public init?(coder aDecoder: NSCoder) {        
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
         self.addTarget(self, action: #selector(RecordButton.didTouchDown), for: .touchDown)
         self.addTarget(self, action: #selector(RecordButton.didTouchUp), for: .touchUpInside)
         self.addTarget(self, action: #selector(RecordButton.didTouchUp), for: .touchUpOutside)

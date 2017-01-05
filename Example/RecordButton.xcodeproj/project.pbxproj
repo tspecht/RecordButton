@@ -215,6 +215,8 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Z9LP2PW2TF;
+						ProvisioningStyle = Manual;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -488,10 +490,14 @@
 			baseConfigurationReference = 65562C669964CFBFEC2A4D6F /* Pods-RecordButton_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z9LP2PW2TF;
 				INFOPLIST_FILE = RecordButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interactions.dazzit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "38883e8f-3ae5-481d-a20c-63266dfc56ae";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.interactions.dazzit";
 			};
 			name = Debug;
 		};
@@ -500,9 +506,11 @@
 			baseConfigurationReference = 4AAC052F2A2A26AABA8B1DA0 /* Pods-RecordButton_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RecordButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.interactions.dazzit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
