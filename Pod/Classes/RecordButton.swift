@@ -64,9 +64,7 @@
         
     }
     
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
+    required public init?(coder aDecoder: NSCoder) {        
         self.addTarget(self, action: #selector(RecordButton.didTouchDown), for: .touchDown)
         self.addTarget(self, action: #selector(RecordButton.didTouchUp), for: .touchUpInside)
         self.addTarget(self, action: #selector(RecordButton.didTouchUp), for: .touchUpOutside)
